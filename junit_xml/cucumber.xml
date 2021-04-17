@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="92.137949">
+<testcase classname="Extension Test" name="Validation of page load time extension loaded is empty" time="18.453006">
+<system-out><![CDATA[Given User has added extension in browser...................................passed
+Then extension displays empty table.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Extension Test" name="Validation of page load time displayed" time="56.654408">
+<system-out><![CDATA[Given User has added extension in browser...................................passed
+When user navigates to "https://www.google.com".............................passed
+Then extension displays table for time to load the website..................passed
+And extension displays time to load the website.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Extension Test" name="Validation of page load time displayed 2" time="17.030535">
+<system-out><![CDATA[Given User has added extension in browser...................................passed
+When user navigates to "http://www.google.com"..............................passed
+Then extension displays table for time to load the website..................passed
+And extension displays time to load the website.............................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,231 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validation of page load time extension loaded is empty",
+        "description": "",
+        "id": "extension-test;validation-of-page-load-time-extension-loaded-is-empty",
+        "after": [
+          {
+            "result": {
+              "duration": 972086200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExtensionTestSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16708431100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User has added extension in browser",
+            "match": {
+              "location": "ExtensionTestSteps.user_has_added_extension_in_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 772489000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "extension displays empty table",
+            "match": {
+              "location": "ExtensionTestSteps.extension_displays_empty_table()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Validation of page load time displayed",
+        "description": "",
+        "id": "extension-test;validation-of-page-load-time-displayed;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1043837500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExtensionTestSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 42273633900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User has added extension in browser",
+            "match": {
+              "location": "ExtensionTestSteps.user_has_added_extension_in_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10922070700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user navigates to \"https://www.google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.google.com",
+                  "offset": 19
+                }
+              ],
+              "location": "ExtensionTestSteps.user_navigates_to_https_www_google_com(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2102215100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "extension displays table for time to load the website",
+            "match": {
+              "location": "ExtensionTestSteps.extension_displays_table_for_time_to_load_the_website()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 312650600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "extension displays time to load the website",
+            "match": {
+              "location": "ExtensionTestSteps.extension_displays_time_to_load_the_website()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Validation of page load time displayed",
+        "description": "",
+        "id": "extension-test;validation-of-page-load-time-displayed;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1602420700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExtensionTestSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3447774800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User has added extension in browser",
+            "match": {
+              "location": "ExtensionTestSteps.user_has_added_extension_in_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11127351000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user navigates to \"http://www.google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.google.com",
+                  "offset": 19
+                }
+              ],
+              "location": "ExtensionTestSteps.user_navigates_to_https_www_google_com(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 639021300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "extension displays table for time to load the website",
+            "match": {
+              "location": "ExtensionTestSteps.extension_displays_table_for_time_to_load_the_website()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 213967200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "extension displays time to load the website",
+            "match": {
+              "location": "ExtensionTestSteps.extension_displays_time_to_load_the_website()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Extension Test",
+    "description": "",
+    "id": "extension-test",
+    "keyword": "Feature",
+    "uri": "ExtensionTest.feature"
+  }
+]
