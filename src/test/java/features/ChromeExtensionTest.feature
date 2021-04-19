@@ -1,10 +1,13 @@
-Feature: Extension Test
-  @SmokeTest
+Feature: Chrome Extension Test
+
+    @SmokeTest
+    @chrome
   Scenario: Validation of page load time extension loaded is empty
     Given User has added extension in browser
     Then extension displays empty table
 
-  @SmokeTest
+    @SmokeTest
+    @chrome
   Scenario Outline: Validation of page load time displayed
     Given User has added extension in browser
     When user navigates to "<url>"

@@ -16,15 +16,15 @@ public class ExtensionTestSteps extends BasePage {
 
     @Given("^User has added extension in browser$")
     public void user_has_added_extension_in_browser(){
-        driver = openUrl();
+        driver = openUrl("chrome");
     }
 
     @Then("^extension displays empty table$")
     public void extension_displays_empty_table() {
-        validateEmptyTable();
+        validateTableRows();
     }
 
-    @When("^^user navigates to \"([^\"]*)\"$")
+    @When("^user navigates to \"([^\"]*)\"$")
     public void user_navigates_to_https_www_google_com(String url) throws InterruptedException {
         driver.get(url);
         sleep(10000);
@@ -32,14 +32,27 @@ public class ExtensionTestSteps extends BasePage {
 
     @Then("^extension displays time to load the website$")
     public void extension_displays_time_to_load_the_website(){
-        driver = openExtensionUrl();
+        driver = openExtensionUrl("chrome",driver);
+        assertEquals(homePage.redirectTitle.getText(),"Redirect");
+        assertEquals(homePage.totalTitle.getText(),"Total");
+    }
+
+    @Then("^firefox extension displays time to load the website$")
+    public void firefox_extension_displays_time_to_load_the_website(){
+        driver = openExtensionUrl("firefox",driver);
         assertEquals(homePage.redirectTitle.getText(),"Redirect");
         assertEquals(homePage.totalTitle.getText(),"Total");
     }
 
     @Then("^extension displays table for time to load the website$")
     public void extension_displays_table_for_time_to_load_the_website() {
-        openExtensionUrlToCheck(driver);
+        openExtensionUrlToCheck("chrome",driver);
+        validateTableRows();
+    }
+
+    @Then("^firefox extension displays table for time to load the website$")
+    public void firefox_extension_displays_table_for_time_to_load_the_website() {
+        openExtensionUrlToCheck("firefox",driver);
         validateTableRows();
     }
 
@@ -48,8 +61,15 @@ public class ExtensionTestSteps extends BasePage {
         validateTable();
     }
 
+    @Given("^User has added extension in firefox browser$")
+    public void user_has_added_extension_in_firefox_browser() {
+        driver = openUrl("firefox");
+    }
+
     @After
     public void after() {
-        driver.quit();
+        if(driver!=null) {
+            driver.quit();
+        }
     }
 }

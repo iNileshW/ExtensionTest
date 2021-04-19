@@ -9,7 +9,9 @@ import org.junit.runner.RunWith;
         (
                 features = {"src/test/java/features"}
                 ,glue = {"stepsdefs"}
-                ,plugin = {"pretty","html:test-output", "json:json_output/cucumber.json","junit:junit_xml/cucumber.xml"}
+                ,plugin = {"pretty","html:test-output",
+                        "json:json_output/cucumber.json",
+                        "junit:junit_xml/cucumber.xml"}
                 //,dryRun = true
                 ,dryRun = false
                 ,tags = {"@SmokeTest"}

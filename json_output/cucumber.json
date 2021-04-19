@@ -3,14 +3,14 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
+        "line": 4,
         "name": "Validation of page load time extension loaded is empty",
         "description": "",
-        "id": "extension-test;validation-of-page-load-time-extension-loaded-is-empty",
+        "id": "chrome-extension-test;validation-of-page-load-time-extension-loaded-is-empty",
         "after": [
           {
             "result": {
-              "duration": 972086200,
+              "duration": 1578448300,
               "status": "passed"
             },
             "match": {
@@ -23,10 +23,10 @@
         "steps": [
           {
             "result": {
-              "duration": 16708431100,
+              "duration": 8669614800,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "User has added extension in browser",
             "match": {
               "location": "ExtensionTestSteps.user_has_added_extension_in_browser()"
@@ -35,10 +35,10 @@
           },
           {
             "result": {
-              "duration": 772489000,
+              "duration": 520856300,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "extension displays empty table",
             "match": {
               "location": "ExtensionTestSteps.extension_displays_empty_table()"
@@ -48,20 +48,20 @@
         ],
         "tags": [
           {
-            "line": 2,
+            "line": 3,
             "name": "@SmokeTest"
           }
         ]
       },
       {
-        "line": 16,
+        "line": 17,
         "name": "Validation of page load time displayed",
         "description": "",
-        "id": "extension-test;validation-of-page-load-time-displayed;;2",
+        "id": "chrome-extension-test;validation-of-page-load-time-displayed;;2",
         "after": [
           {
             "result": {
-              "duration": 1043837500,
+              "duration": 1668914200,
               "status": "passed"
             },
             "match": {
@@ -74,10 +74,10 @@
         "steps": [
           {
             "result": {
-              "duration": 42273633900,
+              "duration": 11082852500,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "User has added extension in browser",
             "match": {
               "location": "ExtensionTestSteps.user_has_added_extension_in_browser()"
@@ -86,10 +86,10 @@
           },
           {
             "result": {
-              "duration": 10922070700,
+              "duration": 12539692100,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "user navigates to \"https://www.google.com\"",
             "match": {
               "arguments": [
@@ -107,10 +107,10 @@
           },
           {
             "result": {
-              "duration": 2102215100,
+              "duration": 3000957500,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "extension displays table for time to load the website",
             "match": {
               "location": "ExtensionTestSteps.extension_displays_table_for_time_to_load_the_website()"
@@ -119,10 +119,10 @@
           },
           {
             "result": {
-              "duration": 312650600,
+              "duration": 637366900,
               "status": "passed"
             },
-            "line": 12,
+            "line": 13,
             "name": "extension displays time to load the website",
             "match": {
               "location": "ExtensionTestSteps.extension_displays_time_to_load_the_website()"
@@ -132,20 +132,20 @@
         ],
         "tags": [
           {
-            "line": 7,
+            "line": 8,
             "name": "@SmokeTest"
           }
         ]
       },
       {
-        "line": 17,
+        "line": 18,
         "name": "Validation of page load time displayed",
         "description": "",
-        "id": "extension-test;validation-of-page-load-time-displayed;;3",
+        "id": "chrome-extension-test;validation-of-page-load-time-displayed;;3",
         "after": [
           {
             "result": {
-              "duration": 1602420700,
+              "duration": 2163246100,
               "status": "passed"
             },
             "match": {
@@ -158,10 +158,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3447774800,
+              "duration": 4409179500,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "User has added extension in browser",
             "match": {
               "location": "ExtensionTestSteps.user_has_added_extension_in_browser()"
@@ -170,10 +170,10 @@
           },
           {
             "result": {
-              "duration": 11127351000,
+              "duration": 10888055200,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "user navigates to \"http://www.google.com\"",
             "match": {
               "arguments": [
@@ -191,10 +191,10 @@
           },
           {
             "result": {
-              "duration": 639021300,
+              "duration": 637088400,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "extension displays table for time to load the website",
             "match": {
               "location": "ExtensionTestSteps.extension_displays_table_for_time_to_load_the_website()"
@@ -203,10 +203,10 @@
           },
           {
             "result": {
-              "duration": 213967200,
+              "duration": 193584800,
               "status": "passed"
             },
-            "line": 12,
+            "line": 13,
             "name": "extension displays time to load the website",
             "match": {
               "location": "ExtensionTestSteps.extension_displays_time_to_load_the_website()"
@@ -216,16 +216,257 @@
         ],
         "tags": [
           {
-            "line": 7,
+            "line": 8,
             "name": "@SmokeTest"
           }
         ]
       }
     ],
-    "name": "Extension Test",
+    "name": "Chrome Extension Test",
     "description": "",
-    "id": "extension-test",
+    "id": "chrome-extension-test",
     "keyword": "Feature",
-    "uri": "ExtensionTest.feature"
+    "uri": "ChromeExtensionTest.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Validation of page load time extension loaded is empty",
+        "description": "",
+        "id": "firefox-extension-test;validation-of-page-load-time-extension-loaded-is-empty",
+        "after": [
+          {
+            "result": {
+              "duration": 20084420100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExtensionTestSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 220416604600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User has added extension in firefox browser",
+            "match": {
+              "location": "ExtensionTestSteps.user_has_added_extension_in_firefox_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1022367200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "extension displays empty table",
+            "match": {
+              "location": "ExtensionTestSteps.extension_displays_empty_table()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SmokeTest"
+          },
+          {
+            "line": 4,
+            "name": "@Firefox"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Validation of page load time displayed",
+        "description": "",
+        "id": "firefox-extension-test;validation-of-page-load-time-displayed;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1870968000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExtensionTestSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 220396552500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User has added extension in firefox browser",
+            "match": {
+              "location": "ExtensionTestSteps.user_has_added_extension_in_firefox_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11520933000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user navigates to \"https://www.google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.google.com",
+                  "offset": 19
+                }
+              ],
+              "location": "ExtensionTestSteps.user_navigates_to_https_www_google_com(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1210847800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "firefox extension displays table for time to load the website",
+            "match": {
+              "location": "ExtensionTestSteps.firefox_extension_displays_table_for_time_to_load_the_website()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 195810100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "firefox extension displays time to load the website",
+            "match": {
+              "location": "ExtensionTestSteps.firefox_extension_displays_time_to_load_the_website()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@Firefox"
+          },
+          {
+            "line": 9,
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Validation of page load time displayed",
+        "description": "",
+        "id": "firefox-extension-test;validation-of-page-load-time-displayed;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1968556300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ExtensionTestSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 152821629200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User has added extension in firefox browser",
+            "match": {
+              "location": "ExtensionTestSteps.user_has_added_extension_in_firefox_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11137931900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user navigates to \"http://www.google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.google.com",
+                  "offset": 19
+                }
+              ],
+              "location": "ExtensionTestSteps.user_navigates_to_https_www_google_com(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24068515500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "firefox extension displays table for time to load the website",
+            "match": {
+              "location": "ExtensionTestSteps.firefox_extension_displays_table_for_time_to_load_the_website()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2706455000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "firefox extension displays time to load the website",
+            "match": {
+              "location": "ExtensionTestSteps.firefox_extension_displays_time_to_load_the_website()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@Firefox"
+          },
+          {
+            "line": 9,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Firefox Extension Test",
+    "description": "",
+    "id": "firefox-extension-test",
+    "keyword": "Feature",
+    "uri": "FirefoxExtensionTest.feature"
   }
 ]
