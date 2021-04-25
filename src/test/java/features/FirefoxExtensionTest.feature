@@ -4,7 +4,7 @@ Feature: Firefox Extension Test
     @Firefox
   Scenario: Validation of page load time extension loaded is empty
     Given User has added extension in firefox browser
-    Then extension displays empty table
+    Then extension displays table
 
     @SmokeTest
     @Firefox
@@ -15,7 +15,7 @@ Feature: Firefox Extension Test
     And firefox extension displays time to load the website
 
     Examples:
-    |   url                     |
-    | https://www.google.com    |
-    | http://www.google.com     |
+    |   url                         |
+    | https://www.google.com        |
+    | https://www.nexthink.com/     |
 

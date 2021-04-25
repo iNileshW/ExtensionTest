@@ -1,7 +1,7 @@
 package runner;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
@@ -9,14 +9,13 @@ import org.junit.runner.RunWith;
         (
                 features = {"src/test/java/features"}
                 ,glue = {"stepsdefs"}
-                ,plugin = {"pretty","html:test-output",
-                        "json:json_output/cucumber.json",
-                        "junit:junit_xml/cucumber.xml"}
-                //,dryRun = true
+                ,plugin = {"pretty","html:target/test-output",
+                        "json:target/json_output/cucumber.json",
+                        "junit:target/junit_xml/cucumber.xml"
+                        }
                 ,dryRun = false
-                ,tags = {"@SmokeTest"}
+                ,tags = "@SmokeTest"
                 ,monochrome = true
-                , strict = true
         )
 public class TestRunner {
 }
