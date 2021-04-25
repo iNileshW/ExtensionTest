@@ -18,9 +18,6 @@ import java.util.concurrent.TimeUnit;
 
 import static util.Constants.*;
 
-//import com.aventstack.extentreports.LogStatus;
-
-
 public class BasePage {
     public static HomePage homePage;
     public WebDriver driver;
@@ -42,35 +39,23 @@ public class BasePage {
             System.setProperty(FIREFOX_BROWSER_DRIVER, FIREFOX_DRIVER_PATH);
 
             ProfilesIni profilesIni = new ProfilesIni();
-            //FirefoxProfile firefoxProfile;
             FirefoxOptions firefoxOptions = new FirefoxOptions();
-            //firefoxProfile = profilesIni.getProfile("Default User");
-            //firefoxProfile = new File("src/main/resources/Default User");
             FirefoxProfile firefoxProfile = new FirefoxProfile(new File("src/main/resources/Default User"));
             firefoxProfile.addExtension(new File("src/main/resources/load_timer.xpi"));
             firefoxProfile.setPreference("browser.cache.disk.enable", false);
             firefoxProfile.setPreference("browser.cache.memory.enable", false);
             firefoxProfile.setPreference("browser.cache.offline.enable", false);
             firefoxProfile.setPreference("network.http.use-cache", false);
-
-
             firefoxOptions.setProfile(firefoxProfile);
             driver = new FirefoxDriver(firefoxOptions);
-            //driver = new FirefoxDriver();
             driver.manage().deleteAllCookies();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             driver.manage().window().maximize();
-
-
-
             driver.get(FIREFOX_HOMEPAGE_URL);
             homePage = PageFactory.initElements(driver, HomePage.class);
         }
         return driver;
     }
-
-
-
 
     public WebDriver openExtensionUrl(String browser, WebDriver webDriver) {
         if(browser.equals("chrome")) {
@@ -131,8 +116,8 @@ public class BasePage {
     public void extensionTest() throws IOException {
         if(homePage.pageHeading.isDisplayed())
         {
-            if(!(homePage.redirectTitle.getText().equals("Redirect"))) throw new AssertionError();
-            if(!(homePage.totalTitle.getText().equals("Total"))) throw new AssertionError();
+            if(!(homePage.redirectTitle.getText().equals("Redirect"))) throw new AssertionError("Ridirect title failed");
+            if(!(homePage.totalTitle.getText().equals("Total"))) throw new AssertionError("Total title failed");
         }
     }
 
