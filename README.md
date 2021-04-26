@@ -1,5 +1,7 @@
 # ExtensionTest
+This is a Maven, Java 8, Automation Test Project for Testing of on-time extension in Chrome & Firefox browser. It uses Selenium, Cucumber with JUnit 4 Unit testing framework. 
 
+Following is the Quiz:
 Thank you very much for filling out this quiz to the best of your competencies. The purpose of this
 quiz is to evaluate your level of expertise in technologies and techniques that we use daily.
 Upon submitting the solution please make sure to provide:
